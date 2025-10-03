@@ -36,8 +36,8 @@ There are two ways to run this project: locally using a Python virtual environme
 
 2.  **Clone the repository**:
     ```bash
-    git clone https://github.com/guraspy/personalized-workout-ap
-    https://github.com/guraspy/personalized-workout-ap
+    git clone https://github.com/guraspy/personalized-workout-api
+    https://github.com/guraspy/personalized-workout-api
     ```
 
 3.  **Create and activate a virtual environment**:
