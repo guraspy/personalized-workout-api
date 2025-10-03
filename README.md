@@ -96,7 +96,7 @@ This is the easiest way to get the entire application running with a single comm
     ```bash
     python manage.py runserver
     ```
-    The API will now be running at `http://127.0.0.1:8000/`.
+    The API will now be running at `http://localhost:8000/`.
 
 ---
 
@@ -122,3 +122,5 @@ Once the application is running, you can access the interactive Swagger API docu
     * `/api/goals/id/`: CRUD operations for the user's goals by id.
     * `/api/tracking/`: List and create of user's weight tracking data.
     * `/api/tracking/id/`: CRUD operations for the user's weight tracking data by id.
+* **Admin**:
+    * `/admin/`: Administrative interface.
