@@ -28,7 +28,33 @@ This is a RESTful API for a Personalized Workout Plan system, built with Django 
 
 There are two ways to run this project: locally using a Python virtual environment, or using Docker (recommended).
 
-#### Option 1: Local Development (Without Docker)
+#### Option 1: Using Docker & Docker Compose (Recommended)
+
+This is the easiest way to get the entire application running with a single command.
+
+1.  **Prerequisites**:
+    * Docker
+
+2. **Clone the repository**:
+    ```bash
+    git clone https://github.com/guraspy/personalized-workout-api
+    cd personalized-workout-api
+    ```
+
+3.  **Run the application**:
+    From the project's root directory, run the following command:
+    ```bash
+    docker-compose up --build
+    ```
+    This command will:
+    * Build the Docker image for the Django application.
+    * Start the container.
+    * Automatically run database migrations and the seeding script.
+    * Start the Gunicorn server.
+
+    The API will now be running at `http://localhost:8000/`. To stop the application, press `Ctrl+C`.
+
+#### Option 2: Local Development (Without Docker)
 
 1.  **Prerequisites**:
     * Python 3.8+
@@ -37,7 +63,7 @@ There are two ways to run this project: locally using a Python virtual environme
 2.  **Clone the repository**:
     ```bash
     git clone https://github.com/guraspy/personalized-workout-api
-    https://github.com/guraspy/personalized-workout-api
+    cd personalized-workout-api
     ```
 
 3.  **Create and activate a virtual environment**:
@@ -71,27 +97,6 @@ There are two ways to run this project: locally using a Python virtual environme
     python manage.py runserver
     ```
     The API will now be running at `http://127.0.0.1:8000/`.
-
-#### Option 2: Using Docker & Docker Compose (Recommended)
-
-This is the easiest way to get the entire application running with a single command.
-
-1.  **Prerequisites**:
-    * Docker
-    * Docker Compose
-
-2.  **Run the application**:
-    From the project's root directory, run the following command:
-    ```bash
-    docker-compose up --build
-    ```
-    This command will:
-    * Build the Docker image for the Django application.
-    * Start the container.
-    * Automatically run database migrations and the seeding script.
-    * Start the Gunicorn server.
-
-    The API will now be running at `http://localhost:8000/`. To stop the application, press `Ctrl+C`.
 
 ---
 
