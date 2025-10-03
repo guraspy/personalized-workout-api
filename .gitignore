@@ -1,6 +1,7 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+*.so
 
 # Environments
 .env
@@ -15,6 +16,7 @@ db.sqlite3
 /media/
 /staticfiles/
 local_settings.py
+*.sqlite3
 
 # Visual Studio Code / IDE
 .vscode/
